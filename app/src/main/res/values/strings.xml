@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Muni Chats</string>
+    <string name="register">Đăng ký mới</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="account_settings">Cài đặt tài khoản</string>
+    <string name="all_users">Mọi người</string>
+    <string name="login">Đăng nhập</string>
+    <string name="default_status">Dòng trạng thái hiển thị ở đây</string>
+    <string name="update_avatar">Cập nhật ảnh đại diện</string>
+    <string name="update_status">Cập nhật trạng thái</string>
+    <string name="default_display_name">Tên hiển thị</string>
+    <string name="status">Trạng thái</string>
+    <string name="add_friend">Gửi lời mời kết bạn</string>
+    <string name="total_friends">Tổng số bạn bè</string>
+    <string name="decline">Từ chối lời mời kết bạn</string>
+    <string name="online">Online</string>
+    <string name="message">Dòng chat</string>
+    <string name="facebook">Facebook</string>
+    <string name="name">Họ tên</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="update">Cập nhật</string>
+    <string name="no_account">Chưa có tài khoản?</string>
+    <string name="facebook_app_id">163436314262104</string>
+    <string name="munichat_page">Giao lưu cộng đồng</string>
+    <string name="all_us_connect">Cùng nhau kết nối</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.englandhoang.munimuni.Main.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/main_page_toolbar"
+            layout="@layout/app_bar_layout"></include>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/main_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabSelectedTextColor="@color/colorWhite"
+            app:tabTextColor="@color/colorWhite">
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/munichat_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBarLayout"
+        android:background="@drawable/friends_border"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/munichat_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/munichat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/munichat_image"
+            android:text="@string/munichat_page"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/munichat_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/munichat_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/munichat_image"
+            android:text="@string/all_us_connect"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_tabPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/munichat_page">
+
+    </android.support.v4.view.ViewPager>
+
+    <com.joaquimley.faboptions.FabOptions
+        android:id="@+id/faboptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom" />
+
+</RelativeLayout>

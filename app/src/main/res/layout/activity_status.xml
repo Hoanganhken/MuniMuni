@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context="com.example.englandhoang.munimuni.Account.StatusActivity">
+
+    <EditText
+        android:id="@+id/status_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/white_boder"
+        android:hint="@string/status"
+        android:text=""
+        android:maxWidth="300dp"
+        android:padding="15dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/status_save_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/status_input"
+        android:layout_below="@+id/status_input"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/violet_border"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:textColor="#6D69DF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/update_status"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
